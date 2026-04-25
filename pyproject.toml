@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "magpie-eval"
+version = "0.0.1"
+description = "Python framework for measuring hallucination in AI code review by verifying claims against source."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Vince Fearing", email = "vincefearing@gmail.com"}]
+keywords = ["llm", "evals", "hallucination", "code-review", "ai"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing",
+]
+
+[project.urls]
+Homepage = "https://github.com/vincentfearing/magpie"
+Repository = "https://github.com/vincentfearing/magpie"
+Issues = "https://github.com/vincentfearing/magpie/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
